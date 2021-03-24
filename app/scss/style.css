@@ -150,7 +150,7 @@ a, a:visited, a:hover {
 .header__menu {
   margin: 0 -2rem;
   padding-top: 3rem;
-  min-height: 100vh;
+  height: 80vh;
   background-color: #2b272f;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -175,9 +175,9 @@ a, a:visited, a:hover {
 }
 
 .header__menu::after {
-  content: url(images/bg-pattern-mobile-nav.svg);
+  content: url(/images/bg-pattern-mobile-nav.svg);
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
 }
 
 .header__menu.active {

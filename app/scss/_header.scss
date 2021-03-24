@@ -62,7 +62,7 @@
     &__menu {
         margin: 0 -2rem;
         padding-top: 3rem;
-        min-height: 100vh;
+        height: 80vh;
         background-color: $VeryDarkViolet;
         transition: all 300ms ease-in-out;
         transform: translateY(-150%);
@@ -79,9 +79,9 @@
             }
         }
         &::after {
-            content: url(images/bg-pattern-mobile-nav.svg);
+            content: url(/images/bg-pattern-mobile-nav.svg);
             position: absolute;
-            bottom: 20px;
+            bottom: 0;
         }
         &.active {
             transform: translateY(0%);
