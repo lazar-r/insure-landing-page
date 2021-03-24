@@ -175,7 +175,7 @@ a, a:visited, a:hover {
 }
 
 .header__menu::after {
-  content: url(/images/bg-pattern-mobile-nav.svg);
+  content: url(images/bg-pattern-mobile-nav.svg);
   position: absolute;
   bottom: 20px;
 }
