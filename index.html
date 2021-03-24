@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/app/scss/style.css">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+
+</head>
+<body>
+  <div class="main">
+    <header class="header">
+      <nav class="flex flex-jc-sb flex-ai-c">
+
+        <a href="/" class="header__logo">
+          <img src="images/logo.svg" alt="">
+        </a>
+
+        <a href="#" class="header__toggle hide-for-desktop">
+          <div id="btnHamburger" class="span__container flex flex-jc-c flex-ai-c flex-fd-c">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+          <a href="#">How we work</a>
+          <a href="#">Blog</a>
+          <a href="#">Account</a>
+          <a href="#" class="selected">View Plans</a>
+        </div>
+      </nav>
+      <div id="menu" class="header__menu hide-for-desktop flex flex-fd-c flex-ai-c">
+        <a href="#">How we work</a>
+        <a href="#">Blog</a>
+        <a href="#">Account</a>
+        <a href="#" class="selected">View Plans</a>
+      </div>
+    </header>
+  </div>
+
+
+  <script src="app/js/script.js"></script>
+</body>
+</html>

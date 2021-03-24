@@ -1,0 +1,16 @@
+// Desktop
+@include breakpoint-up(large) {
+    .main {
+        padding: 0 10rem;
+        margin: 0 auto;
+    }
+}
+// Small screens
+@include breakpoint-down(medium) {
+    .main {
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
+}
+
+

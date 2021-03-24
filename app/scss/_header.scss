@@ -1,0 +1,96 @@
+.header {
+    nav {
+        padding: 30px 0;
+    }
+    // Burger
+    &__toggle {
+        .span__container {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border: 2px solid $DarkViolet;
+            &.open {
+
+                > span:first-child {
+                    transform: translateY(6px)
+                    rotate(45deg);
+                }
+                > span:nth-child(2) {
+                    opacity: 0;
+                    width: 0;
+                }
+                > span:last-child {
+                    transform: translateY(-6px) 
+                    rotate(-45deg);
+                }
+            }
+            > span {
+                width: 17px;
+                height: 2px;
+                background-color: $DarkViolet;
+                margin: 2px auto;
+                transition: all 300ms ease-in-out;
+
+                }
+            }
+        }
+        // Desktop nav
+    &__links {
+        a {
+            color: $DarkGrayishViolet;
+            text-transform: uppercase;
+            transition: color 150ms ease-in-out;
+            &:hover {
+                color: $VeryDarkViolet;
+            }
+            &:not(:last-child){
+                margin-right: 1.875rem;
+            }
+            &.selected {
+                padding: 0.5rem 1.875rem;
+                color: $DarkViolet;
+                border: 2px solid $DarkViolet;
+                font-weight: 700;
+                &:hover {
+                    background-color: $VeryDarkViolet;
+                    color: $VeryLightGray;
+                }
+            }
+        }
+    }
+    // Mobile nav
+    &__menu {
+        margin: 0 -2rem;
+        padding-top: 3rem;
+        min-height: 100vh;
+        background-color: $VeryDarkViolet;
+        transition: all 300ms ease-in-out;
+        transform: translateY(-150%);
+        a {
+            color: $VeryLightGray;
+            text-transform: uppercase;
+            transition: color 150ms ease-out;
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+            &.selected {
+                padding: .7rem 6.5rem;
+                border: 2px solid $VeryLightGray;
+            }
+        }
+        &::after {
+            content: url(/images/bg-pattern-mobile-nav.svg);
+            position: absolute;
+            bottom: 20px;
+        }
+        &.active {
+            transform: translateY(0%);
+            transition: all 500ms ease-in;
+        }
+    }
+}
+@media screen and (min-width: 385px) {
+    .header__menu::after {
+        display: none;
+    }
+}
