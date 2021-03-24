@@ -1,6 +1,6 @@
 .header {
     nav {
-        padding: 30px 0;
+        padding: 1.875rem 0;
     }
     // Burger
     &__toggle {
@@ -62,6 +62,12 @@
     &__menu {
         margin: 0 -2rem;
         padding-top: 3rem;
+        z-index: 1000;
+        position: absolute;
+        top: 6rem;
+        bottom: 0;
+        right: 0;
+        left: 0;
         height: 80vh;
         background-color: $VeryDarkViolet;
         transition: all 300ms ease-in-out;

@@ -14,37 +14,54 @@
 
 </head>
 <body>
-  <div class="main">
-    <header class="header">
-      <nav class="flex flex-jc-sb flex-ai-c">
+   <header class="header container">
+    <nav class="flex flex-jc-sb flex-ai-c">
 
-        <a href="/" class="header__logo">
-          <img src="images/logo.svg" alt="">
-        </a>
+      <a href="/" class="header__logo">
+        <img src="images/logo.svg" alt="">
+      </a>
 
-        <a href="#" class="header__toggle hide-for-desktop">
-          <div id="btnHamburger" class="span__container flex flex-jc-c flex-ai-c flex-fd-c">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-
-        <div class="header__links hide-for-mobile">
-          <a href="#">How we work</a>
-          <a href="#">Blog</a>
-          <a href="#">Account</a>
-          <a href="#" class="selected">View Plans</a>
+      <a href="#" class="header__toggle hide-for-desktop">
+        <div id="btnHamburger" class="span__container flex flex-jc-c flex-ai-c flex-fd-c">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
-      <div id="menu" class="header__menu hide-for-desktop flex flex-fd-c flex-ai-c">
+      </a>
+
+      <div class="header__links hide-for-mobile">
         <a href="#">How we work</a>
         <a href="#">Blog</a>
         <a href="#">Account</a>
         <a href="#" class="selected">View Plans</a>
       </div>
-    </header>
-  </div>
+    </nav>
+    <div id="menu" class="header__menu hide-for-desktop flex flex-fd-c flex-ai-c">
+      <a href="#">How we work</a>
+      <a href="#">Blog</a>
+      <a href="#">Account</a>
+      <a href="#" class="selected">View Plans</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container flex flex-fd-c">
+      <div class="hero__image"></div>
+      <div class="hero__text">
+        <h1>
+          Humanizing <br> your insurance.
+        </h1>
+        <p>
+          Get your life insurance coverage easier and faster. We blend our expertise 
+          and technology to help you find the plan that's right for you. Ensure you
+          and your loved ones are protected.
+        </p>
+        <button class="button">
+          View plans
+        </button>
+      </div>
+
+    </div>
+  </section>
 
 
   <script src="app/js/script.js"></script>

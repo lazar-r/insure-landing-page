@@ -15,13 +15,16 @@ html {
 }
 
 body {
-  overflow: hidden;
   font-family: 'Karla', sans-serif;
   font-size: 16px;
+  line-height: 1.7;
 }
 
 body h1 {
   font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 1.1;
 }
 
 a, a:visited, a:hover {
@@ -71,22 +74,30 @@ a, a:visited, a:hover {
   }
 }
 
+button, .button {
+  color: #fafafa;
+  background-color: transparent;
+  padding: 0.5rem 1.875rem;
+  border: 2px solid #fafafa;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 @media (min-width: 64em) {
-  .main {
+  .container {
     padding: 0 10rem;
-    margin: 0 auto;
   }
 }
 
 @media (max-width: 63.9375em) {
-  .main {
+  .container {
     padding: 0 2rem;
-    margin: 0 auto;
   }
 }
 
 .header nav {
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 
 .header__toggle .span__container {
@@ -150,6 +161,12 @@ a, a:visited, a:hover {
 .header__menu {
   margin: 0 -2rem;
   padding-top: 3rem;
+  z-index: 1000;
+  position: absolute;
+  top: 6rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
   height: 80vh;
   background-color: #2b272f;
   -webkit-transition: all 300ms ease-in-out;
@@ -191,5 +208,59 @@ a, a:visited, a:hover {
   .header__menu::after {
     display: none;
   }
+}
+
+.hero {
+  background-color: #2d2640;
+  color: #fafafa;
+  min-height: 37.5rem;
+}
+
+.hero::before {
+  content: url(/images/bg-pattern-intro-left-mobile.svg);
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  z-index: 0;
+}
+
+.hero::after {
+  content: url(/images/bg-pattern-intro-right-mobile.svg);
+  position: absolute;
+  right: 0;
+  bottom: -510px;
+}
+
+.hero__image {
+  min-height: 27.5rem;
+  min-width: 100%;
+  margin: 0 -2rem;
+  background-image: url("/images/image-intro-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+.hero__text {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  z-index: 999;
+}
+
+.hero__text h1 {
+  font-size: 45px;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.hero__text p {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.hero__text button {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

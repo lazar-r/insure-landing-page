@@ -1,0 +1,46 @@
+.hero {
+    background-color: $DarkViolet;
+    color: $VeryLightGray;
+    min-height: 37.5rem;
+    &::before {
+        content: url(/images/bg-pattern-intro-left-mobile.svg);
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        z-index: 0;
+    } 
+    &::after {
+        content: url(/images/bg-pattern-intro-right-mobile.svg);
+        position: absolute;
+        right: 0;
+        bottom: -510px;
+    }
+    &__image {
+        min-height: 27.5rem;
+        min-width: 100%;
+        margin: 0 -2rem;
+        background-image: url('/images/image-intro-mobile.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 999;
+    }
+    &__text {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        text-align: center;
+        z-index: 999;
+        h1 {
+            font-size: $h1mobile;
+            margin-bottom: 1rem;
+            white-space: nowrap;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 1rem;
+        }
+        button {
+            margin-top: 1rem;
+        }
+    }
+}
