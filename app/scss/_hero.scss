@@ -3,14 +3,14 @@
     color: $VeryLightGray;
     min-height: 37.5rem;
     &::before {
-        content: url(/images/bg-pattern-intro-left-mobile.svg);
+        content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678819/bg-pattern-intro-left-mobile_exsnkn.svg');
         position: absolute;
         left: 0;
         bottom: -40px;
         z-index: 0;
     } 
     &::after {
-        content: url(/images/bg-pattern-intro-right-mobile.svg);
+        content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678821/bg-pattern-intro-right-mobile_xdlpd9.svg');
         position: absolute;
         right: 0;
         bottom: -510px;
@@ -19,7 +19,7 @@
         min-height: 27.5rem;
         min-width: 100%;
         margin: 0 -2rem;
-        background-image: url('/images/image-intro-mobile.jpg');
+        background-image: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678825/image-intro-mobile_vmwpvc.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
