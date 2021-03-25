@@ -1,4 +1,14 @@
 .header {
+    position: relative;
+    z-index: 1000;
+    @include breakpoint-up(large) {
+        &::after {
+            content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678821/bg-pattern-intro-right-desktop_ty0idy.svg');
+            position: absolute;
+            right: -3%;
+            z-index: 500;
+        }
+    }
     nav {
         padding: 1.875rem 0;
     }

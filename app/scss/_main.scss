@@ -2,12 +2,14 @@
 @include breakpoint-up(large) {
     .container {
         padding: 0 10rem;
+        min-height: inherit;
     }
 }
 // Small screens
 @include breakpoint-down(medium) {
     .container {
         padding: 0 2rem;
+        min-height: inherit;
     }
 }
 
