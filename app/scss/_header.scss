@@ -1,6 +1,7 @@
 .header {
     position: relative;
     z-index: 1000;
+    background-color: $VeryLightGray;
     @include breakpoint-up(large) {
         &::after {
             content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678821/bg-pattern-intro-right-desktop_ty0idy.svg');

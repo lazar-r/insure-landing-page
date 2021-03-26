@@ -1,0 +1,44 @@
+.feature {
+    background-color: inherit;
+    margin-top: 23rem;
+    @include breakpoint-up(large) {
+        &__flex {
+            flex-direction: row;
+        }
+    }
+    &__about {
+        h1 {
+            margin-bottom: 5rem;
+        }
+    }
+    &__item {  
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+    &__icon {
+        margin-bottom: 1rem;
+    }
+    &__tittle {
+        margin-bottom: .5rem;
+    }
+    &__text {
+        opacity: .7;
+    }
+    &__banner {
+        background-color: $DarkViolet;
+        min-height: 13rem;
+        padding: 2rem 4rem;
+        margin-top: 10rem;
+        h2 {
+            color: $VeryLightGray;
+        }
+        .__tittle {
+            flex: 2;
+        }
+        .__container {
+            flex: 1;
+            justify-content: flex-end;
+        }
+    }
+}
