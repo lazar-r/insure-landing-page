@@ -249,8 +249,8 @@ button, .button {
 }
 
 @media (min-width: 40em) {
-  .hero {
-    padding-top: 3rem;
+  .hero .container {
+    margin: 3rem;
   }
 }
 
@@ -281,6 +281,9 @@ button, .button {
 }
 
 @media (min-width: 64em) {
+  .hero {
+    padding-top: 2rem;
+  }
   .hero::before {
     content: url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678819/bg-pattern-intro-left-desktop_ryv6bc.svg");
     position: absolute;
@@ -302,7 +305,7 @@ button, .button {
   .hero__image {
     min-height: 35rem;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     margin: inherit;
   }
 }
@@ -315,21 +318,12 @@ button, .button {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin: 0 auto;
-    min-height: 37rem;
-    background-image: none;
-    z-index: 499;
-  }
-  .hero__image::before {
-    content: '';
-    position: absolute;
-    bottom: -20%;
-    right: 0;
-    width: 100%;
-    height: 110%;
+    margin-bottom: -6rem;
+    min-height: 39.5rem;
     background-image: url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678825/image-intro-desktop_zhptsm.jpg");
+    z-index: 499;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: bottom;
   }
 }
 
@@ -359,6 +353,12 @@ button, .button {
 
 .hero__text button {
   margin-top: 1rem;
+}
+
+.hero__text button:hover {
+  background-color: #fafafa;
+  color: #2d2640;
+  cursor: pointer;
 }
 
 @media (min-width: 64em) {
@@ -405,7 +405,16 @@ button, .button {
 
 .feature {
   background-color: inherit;
-  margin-top: 23rem;
+  margin: 15rem auto;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .feature {
+    text-align: left;
+    margin-top: 23rem;
+    margin-bottom: 15rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -417,12 +426,46 @@ button, .button {
   }
 }
 
+.feature__about {
+  position: relative;
+}
+
+.feature__about::before {
+  content: '';
+  display: inline;
+  border-top: 1px solid black;
+  position: absolute;
+  top: -5%;
+  left: 30%;
+  width: 8.75rem;
+}
+
+@media (min-width: 64em) {
+  .feature__about::before {
+    top: -20%;
+    left: 0;
+  }
+}
+
 .feature__about h1 {
   margin-bottom: 5rem;
+  font-size: 46px;
+}
+
+@media (min-width: 64em) {
+  .feature__about h1 {
+    font-size: 66px;
+  }
 }
 
 .feature__item:not(:last-child) {
-  margin-right: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 64em) {
+  .feature__item:not(:last-child) {
+    margin-right: 3rem;
+  }
 }
 
 .feature__icon {
@@ -430,7 +473,11 @@ button, .button {
 }
 
 .feature__tittle {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+
+.feature__tittle h3 {
+  font-size: 25px;
 }
 
 .feature__text {
@@ -438,20 +485,67 @@ button, .button {
 }
 
 .feature__banner {
+  position: relative;
   background-color: #2d2640;
-  min-height: 13rem;
-  padding: 2rem 4rem;
-  margin-top: 10rem;
+  min-height: 10rem;
+  padding: 4rem 2rem;
+  margin-top: 7rem;
 }
 
-.feature__banner h2 {
-  color: #fafafa;
+.feature__banner button {
+  z-index: 999;
+}
+
+.feature__banner button:hover {
+  background-color: #fafafa;
+  color: #2d2640;
+  cursor: pointer;
+}
+
+.feature__banner::after {
+  content: url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678819/bg-pattern-how-we-work-mobile_xmpzvj.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 499;
+}
+
+@media (min-width: 64em) {
+  .feature__banner::after {
+    content: url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678819/bg-pattern-how-we-work-desktop_lw0zfq.svg");
+  }
+}
+
+@media (min-width: 64em) {
+  .feature__banner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 11.7rem;
+    padding: 2rem 4rem;
+    margin-top: 10rem;
+  }
 }
 
 .feature__banner .__tittle {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.feature__banner .__tittle h2 {
+  color: #fafafa;
+  margin-bottom: 4rem;
+  font-size: 39px;
+  z-index: 999;
+}
+
+@media (min-width: 64em) {
+  .feature__banner .__tittle h2 {
+    margin: 0 auto;
+    font-size: 54px;
+  }
 }
 
 .feature__banner .__container {
