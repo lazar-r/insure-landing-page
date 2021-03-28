@@ -405,7 +405,7 @@ button, .button {
 }
 
 .feature {
-  margin: 13rem auto;
+  margin: 10rem auto;
   text-align: center;
 }
 
@@ -665,7 +665,8 @@ button, .button {
 
 .footer__links p {
   margin-bottom: 1.5rem;
-  opacity: .5;
+  color: #2d2640;
+  opacity: .4;
 }
 
 .footer__links a {
