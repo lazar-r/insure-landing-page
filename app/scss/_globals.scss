@@ -13,7 +13,6 @@ body {
     font-family: 'Karla', sans-serif;
     font-size: $body;
     line-height: 1.7;
-    background-color: $VeryLightGray;
     overflow-x: hidden;
     h1 {
         font-family: 'DM Serif Display', serif;
@@ -31,9 +30,13 @@ body {
         font-family: 'DM Serif Display', serif;
         font-weight: 400;
     }
+    ul {
+        list-style: none;
+    }
 }
 a, a:visited, a:hover {
     text-decoration: none;
+    cursor: pointer;
 }
 
 //Flexbox 

@@ -1,6 +1,5 @@
 .feature {
-    background-color: inherit;
-    margin: 15rem auto;
+    margin: 13rem auto;
     text-align: center;
     @include breakpoint-up(large) {
         text-align: left;
@@ -22,6 +21,9 @@
             top: -5%;
             left: 30%;
             width: 8.75rem;
+            @include breakpoint-up(medium) {
+                left: 40%;
+            }
             @include breakpoint-up(large) {
                 top: -20%;
                 left: 0;
@@ -60,7 +62,6 @@
     &__banner {
         position: relative;
         background-color: $DarkViolet;
-        min-height: 10rem;
         padding: 4rem 2rem;
         margin-top: 7rem;
         button {
@@ -92,7 +93,7 @@
             flex: 1;
             h2 {
                 color: $VeryLightGray;
-                margin-bottom: 4rem;
+                margin-bottom: 3rem;
                 font-size: 39px;
                 z-index: 999;
                 @include breakpoint-up(large){

@@ -1,0 +1,99 @@
+.footer {
+    background-color: $VeryLightGray;
+    position: relative;
+    text-align: center;
+    padding: 5rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include breakpoint-down(small){
+        &::after {
+            content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678819/bg-pattern-footer-mobile_jwyttx.svg');
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 499;
+        }
+    }
+    @include breakpoint-up(large){
+        text-align: left;
+        .container {
+            flex-direction: row;    
+        }
+        &::after {
+            content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678819/bg-pattern-footer-desktop_rleub2.svg');
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 499;
+        }
+    }
+    &__socials {
+        margin-bottom: 6rem;
+        position: relative;
+        z-index: 999;
+        &::after {
+            content: '';
+            position: absolute;
+            display: inline;
+            border-top: 1px solid black;
+            opacity: .2;
+            width: 87%;
+            bottom: -50%;
+            @include breakpoint-up(large){
+                width: 78%;
+                bottom: -10%;
+            }
+        }
+        @include breakpoint-up(large) {
+            justify-content: space-between;
+            margin-bottom: 4rem;
+        }
+    }
+    &__logo {
+        margin-bottom: 2rem;
+
+    }
+    &__icons {
+        a{
+            &:not(:last-child){
+                margin-right: .7rem;
+            }
+            svg path {
+                transition: fill 150ms ease-in-out;
+              }
+        
+              &:hover svg path {
+                fill: $VeryDarkViolet;
+              }
+        }
+    }
+    &__links {
+        @include breakpoint-up(large) {
+            div {
+                &:not(:last-child){
+                    margin-right: 11rem;
+                }
+            }
+        }
+        div{
+            &:not(:last-child){
+                margin-bottom: 1.5rem;
+            }
+            li {
+                &:not(:last-child){
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+        p {
+            margin-bottom: 1.5rem;
+            opacity: .7;
+        }
+        a {
+            color: $DarkViolet;
+            &:hover {
+                border-bottom: 1px solid $VeryDarkViolet;
+            }
+        }
+    }
+}
