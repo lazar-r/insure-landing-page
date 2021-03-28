@@ -321,7 +321,7 @@ button, .button {
         -ms-flex-order: 2;
             order: 2;
     margin-bottom: -8.5rem;
-    min-height: 42rem;
+    min-height: 41rem;
     background-image: url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678825/image-intro-desktop_zhptsm.jpg");
     z-index: 499;
     background-repeat: no-repeat;
@@ -405,7 +405,8 @@ button, .button {
 }
 
 .feature {
-  margin: 10rem auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 
@@ -581,7 +582,7 @@ button, .button {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .footer {
     text-align: left;
   }
@@ -623,7 +624,7 @@ button, .button {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .footer__socials {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -647,6 +648,12 @@ button, .button {
 
 .footer__icons a:hover svg path {
   fill: #2b272f;
+}
+
+@media (min-width: 40em) {
+  .footer__links div:not(:last-child) {
+    margin-right: 7rem;
+  }
 }
 
 @media (min-width: 64em) {

@@ -14,7 +14,7 @@
             z-index: 499;
         }
     }
-    @include breakpoint-up(large){
+    @include breakpoint-up(medium){
         text-align: left;
         .container {
             flex-direction: row;    
@@ -44,7 +44,7 @@
                 bottom: -10%;
             }
         }
-        @include breakpoint-up(large) {
+        @include breakpoint-up(medium) {
             justify-content: space-between;
             margin-bottom: 4rem;
         }
@@ -68,6 +68,13 @@
         }
     }
     &__links {
+        @include breakpoint-up(medium){
+            div {
+                &:not(:last-child){
+                    margin-right: 7rem;
+                }
+            }
+        }
         @include breakpoint-up(large) {
             div {
                 &:not(:last-child){
