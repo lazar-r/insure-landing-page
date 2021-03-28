@@ -119,7 +119,7 @@ button, .button {
 .header {
   position: relative;
   z-index: 1000;
-  background-color: #fafafa;
+  background-color: white;
 }
 
 .header nav {
@@ -395,7 +395,7 @@ button, .button {
     line-height: 1.9;
   }
   .hero__text .button {
-    width: 9rem;
+    width: 7rem;
   }
   .hero__text .button:hover {
     background-color: #fafafa;
