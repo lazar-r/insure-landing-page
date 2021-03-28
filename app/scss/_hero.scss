@@ -38,6 +38,13 @@
             position: absolute;
             bottom: -30%;
         }
+        &::after {
+            content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678821/bg-pattern-intro-right-desktop_ty0idy.svg');
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 500;
+        }
 
     } 
     &__image {

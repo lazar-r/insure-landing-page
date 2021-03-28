@@ -18,8 +18,8 @@ body {
   font-family: 'Karla', sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  overflow-x: hidden;
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 body h1 {
@@ -116,15 +116,6 @@ button, .button {
   position: relative;
   z-index: 1000;
   background-color: #fafafa;
-}
-
-@media (min-width: 64em) {
-  .header::after {
-    content: url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678821/bg-pattern-intro-right-desktop_ty0idy.svg");
-    position: absolute;
-    right: -3%;
-    z-index: 500;
-  }
 }
 
 .header nav {
@@ -288,6 +279,13 @@ button, .button {
     content: url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678819/bg-pattern-intro-left-desktop_ryv6bc.svg");
     position: absolute;
     bottom: -30%;
+  }
+  .hero::after {
+    content: url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678821/bg-pattern-intro-right-desktop_ty0idy.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 500;
   }
 }
 
