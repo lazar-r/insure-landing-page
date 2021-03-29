@@ -14,11 +14,8 @@
             z-index: 499;
         }
     }
-    @include breakpoint-up(medium){
+    @include breakpoint-up(large){
         text-align: left;
-        .container {
-            flex-direction: row;    
-        }
         &::after {
             content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678819/bg-pattern-footer-desktop_rleub2.svg');
             position: absolute;
@@ -37,14 +34,12 @@
             display: inline;
             border-top: 1px solid black;
             opacity: .2;
-            width: 87%;
+            width: 100%;
             bottom: -50%;
-            @include breakpoint-up(large){
-                width: 78%;
-                bottom: -10%;
-            }
+
         }
-        @include breakpoint-up(medium) {
+        @include breakpoint-up(large) {
+            flex-direction: row;
             justify-content: space-between;
             margin-bottom: 4rem;
         }
@@ -68,7 +63,8 @@
         }
     }
     &__links {
-        @include breakpoint-up(medium){
+        @include breakpoint-up(large){
+            flex-direction: row;
             div {
                 &:not(:last-child){
                     margin-right: 7rem;

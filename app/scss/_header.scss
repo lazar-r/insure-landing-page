@@ -3,7 +3,10 @@
     z-index: 1000;
     background-color: white;
     nav {
-        padding: 1.875rem 0;
+        padding: 1.875rem;
+        @include breakpoint-down(medium){
+            padding: 1.95rem 1rem;
+        }
     }
     // Burger
     &__toggle {

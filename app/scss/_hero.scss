@@ -1,17 +1,20 @@
 .hero {
     background-color: $DarkViolet;
     color: $VeryLightGray;
-    min-height: 37.5rem;
+    min-height: 25.25rem;
     z-index: 0;
-    @include breakpoint-up(medium){
-        .container {
-            margin: 3rem;
-        }
-    }
-    @include breakpoint-up(large) {
-        .container {
+    @include breakpoint-up(large){
+        .flex {
             flex-direction: row;
-            margin: auto;
+            position: relative;
+            &::before {
+                content: '';
+                display: inline;
+                border-top: 1px solid $VeryLightGray;
+                position: absolute;
+                top:  0;
+                width: 8.75rem;
+            }
         }
     }
 
@@ -32,11 +35,12 @@
         }
     }
     @include breakpoint-up(large) {
-        padding-top: 2rem;
+        padding-top: 6.6rem;
         &::before {
             content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678819/bg-pattern-intro-left-desktop_ryv6bc.svg');
             position: absolute;
-            bottom: -30%;
+            bottom: -28%;
+            z-index: 500;
         }
         &::after {
             content: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678821/bg-pattern-intro-right-desktop_ty0idy.svg');
@@ -49,6 +53,7 @@
     } 
     &__image {
         position: relative;
+        flex: 1;
         min-height: 27.5rem;
         margin: 0 -2rem;
         background-image: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678825/image-intro-mobile_vmwpvc.jpg');
@@ -66,8 +71,8 @@
         @include breakpoint-up(large) {
             flex: 1;
             order: 2;
-            margin-bottom: -8.5rem;
-            min-height: 41rem;
+            margin-bottom: -10rem;
+            min-height: 40.8rem;
             background-image: url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678825/image-intro-desktop_zhptsm.jpg');
             z-index: 499;
             background-repeat: no-repeat;
@@ -80,6 +85,7 @@
         margin: 5rem auto;
         text-align: center;
         z-index: 999;
+        flex: 1;
         h1 {
             font-size: $h1mobile;
             margin-bottom: 1rem;
@@ -108,14 +114,6 @@
             flex-direction: column;
             justify-content: center;
             position: relative;
-            &::before {
-                content: '';
-                display: inline;
-                border-top: 1px solid $VeryLightGray;
-                position: absolute;
-                top:  0;
-                width: 8.75rem;
-            }
             p {
                 line-height: 1.9;
             }

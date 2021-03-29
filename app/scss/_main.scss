@@ -1,14 +1,19 @@
 // Desktop
 @include breakpoint-up(large) {
     .container {
-        padding: 0 10rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+        max-width: 69.31rem;
         min-height: inherit;
     }
 }
 // Small screens
 @include breakpoint-down(medium) {
     .container {
-        padding: 0 1.5rem;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 500px;
         min-height: inherit;
     }
 }
