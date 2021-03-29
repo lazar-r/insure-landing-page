@@ -34,9 +34,13 @@
             display: inline;
             border-top: 1px solid black;
             opacity: .2;
-            width: 100%;
+            width: 90%;
+            display: flex;
+            align-self: center;
             bottom: -50%;
-
+            @include breakpoint-up(large){
+                width: 100%;
+            }
         }
         @include breakpoint-up(large) {
             flex-direction: row;
