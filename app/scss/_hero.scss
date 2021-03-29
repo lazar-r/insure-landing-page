@@ -7,6 +7,7 @@
         .flex {
             flex-direction: row;
             position: relative;
+            gap: 1rem;
             &::before {
                 content: '';
                 display: inline;
@@ -89,7 +90,6 @@
         h1 {
             font-size: $h1mobile;
             margin-bottom: 1rem;
-            white-space: nowrap;
             @include breakpoint-up(medium) {
                 font-size: $h1desktop;
             }

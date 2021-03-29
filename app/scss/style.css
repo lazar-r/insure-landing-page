@@ -260,6 +260,7 @@ button, .button {
         -ms-flex-direction: row;
             flex-direction: row;
     position: relative;
+    gap: 1rem;
   }
   .hero .flex::before {
     content: '';
@@ -357,7 +358,6 @@ button, .button {
 .hero__text h1 {
   font-size: 46px;
   margin-bottom: 1rem;
-  white-space: nowrap;
 }
 
 @media (min-width: 40em) {
