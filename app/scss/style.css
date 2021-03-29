@@ -229,7 +229,7 @@ button, .button {
 }
 
 .header__menu::after {
-  content: url(/images/bg-pattern-mobile-nav.svg);
+  content: url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1616678821/bg-pattern-mobile-nav_l7nrv8.svg");
   position: absolute;
   bottom: 0;
 }
