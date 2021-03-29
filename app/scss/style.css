@@ -18,6 +18,7 @@ body {
   font-family: 'Karla', sans-serif;
   font-size: 16px;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 body h1 {
@@ -127,12 +128,12 @@ button, .button {
 }
 
 .header nav {
-  padding: 1.875rem;
+  padding: 1.875rem 0;
 }
 
 @media (max-width: 63.9375em) {
   .header nav {
-    padding: 1.95rem 1rem;
+    padding: 1.9rem 1rem;
   }
 }
 
@@ -348,6 +349,7 @@ button, .button {
 
 .hero__text {
   margin: 5rem auto;
+  padding: 0 1.7rem;
   text-align: center;
   z-index: 999;
   -webkit-box-flex: 1;
@@ -440,6 +442,7 @@ button, .button {
 
 .feature__about {
   position: relative;
+  padding: 0 1.7rem;
 }
 
 .feature__about::before {

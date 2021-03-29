@@ -14,34 +14,37 @@
 
 </head>
 <body>
-  <header class="header container">
-    <nav class="flex flex-jc-sb flex-ai-c">
+  <header class="header">
+    <div class="container">
+      <nav class="flex flex-jc-sb flex-ai-c">
 
-      <a href="/" class="header__logo">
-        <img src="images/logo.svg" alt="">
-      </a>
-
-      <a href="#" class="header__toggle hide-for-desktop">
-        <div id="btnHamburger" class="span__container flex flex-jc-c flex-ai-c flex-fd-c">
-          <span></span>
-          <span></span>
-          <span></span>
+        <a href="/" class="header__logo">
+          <img src="images/logo.svg" alt="">
+        </a>
+  
+        <a href="#" class="header__toggle hide-for-desktop">
+          <div id="btnHamburger" class="span__container flex flex-jc-c flex-ai-c flex-fd-c">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+  
+        <div class="header__links hide-for-mobile">
+          <a href="#">How we work</a>
+          <a href="#">Blog</a>
+          <a href="#">Account</a>
+          <a href="#" class="selected">View Plans</a>
         </div>
-      </a>
-
-      <div class="header__links hide-for-mobile">
+      </nav>
+      <div id="menu" class="header__menu hide-for-desktop flex flex-fd-c flex-ai-c">
         <a href="#">How we work</a>
         <a href="#">Blog</a>
         <a href="#">Account</a>
         <a href="#" class="selected">View Plans</a>
       </div>
-    </nav>
-    <div id="menu" class="header__menu hide-for-desktop flex flex-fd-c flex-ai-c">
-      <a href="#">How we work</a>
-      <a href="#">Blog</a>
-      <a href="#">Account</a>
-      <a href="#" class="selected">View Plans</a>
     </div>
+    
   </header>
   <section class="hero">
     <div class="container">

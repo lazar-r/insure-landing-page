@@ -3,9 +3,9 @@
     z-index: 1000;
     background-color: white;
     nav {
-        padding: 1.875rem;
+        padding: 1.875rem 0;
         @include breakpoint-down(medium){
-            padding: 1.95rem 1rem;
+            padding: 1.9rem 1rem;
         }
     }
     // Burger
