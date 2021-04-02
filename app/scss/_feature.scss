@@ -1,6 +1,5 @@
 .feature {
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    margin: 10rem 0;
     text-align: center;
     @include breakpoint-up(large) {
         text-align: left;

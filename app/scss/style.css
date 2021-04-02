@@ -349,7 +349,7 @@ button, .button {
 
 .hero__text {
   margin: 5rem auto;
-  padding-right: 1.7rem;
+  padding: 0 1.2rem;
   text-align: center;
   z-index: 999;
   -webkit-box-flex: 1;
@@ -385,6 +385,7 @@ button, .button {
 
 @media (min-width: 64em) {
   .hero__text {
+    padding-right: 1.7rem;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -418,8 +419,7 @@ button, .button {
 }
 
 .feature {
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin: 10rem 0;
   text-align: center;
 }
 
